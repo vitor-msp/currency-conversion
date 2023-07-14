@@ -6,12 +6,12 @@ void main() {
   test('ensure convert from REAL to DOLAR', () {
     final double result =
         Currency(Currencies.real).convertValue(1.0).to(Currencies.dolar);
-    expect(result, 0.2);
+    expect(result, 0.2085);
   });
 
   test('ensure convert from DOLAR to REAL', () {
     final double result =
         Currency(Currencies.dolar).convertValue(1.0).to(Currencies.real);
-    expect(result, 5);
+    expect(result, 4.7966);
   });
 }

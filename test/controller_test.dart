@@ -13,7 +13,7 @@ void main() {
     controller.fromCurrencyText.text = "1.0";
     controller.toCurrency = Currencies.dolar;
     controller.convert();
-    expect(controller.toCurrencyText.text, "0.2");
+    expect(controller.toCurrencyText.text, "0.21");
   });
 
   test("ensure convert from DOLAR to REAL in controller", () {
@@ -21,7 +21,7 @@ void main() {
     controller.fromCurrencyText.text = "1.0";
     controller.toCurrency = Currencies.real;
     controller.convert();
-    expect(controller.toCurrencyText.text, "5.0");
+    expect(controller.toCurrencyText.text, "4.80");
   });
 
   test("ensure convert from DOLAR to REAL using comma", () {
@@ -29,6 +29,6 @@ void main() {
     controller.fromCurrencyText.text = "1,0";
     controller.toCurrency = Currencies.real;
     controller.convert();
-    expect(controller.toCurrencyText.text, "5.0");
+    expect(controller.toCurrencyText.text, "4.80");
   });
 }
