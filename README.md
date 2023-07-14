@@ -2,4 +2,4 @@
 
 Simple mobile Flutter app to currency conversion.
 
-![mobile app currency converter print](assets/images/currency_converter.png)
+<img src="assets/images/currency_converter.png" alt="mobile app currency converter print" width="300">
